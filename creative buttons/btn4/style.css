@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: crimson;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 5rem;
+    background: rgb(17, 17, 137, 0.8);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 4px solid darkblue;
+    border-left: 4px solid darkblue;
+}
